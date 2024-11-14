@@ -1,9 +1,28 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #919191;
+    border-radius: 24px 24px 0 0;
+}
 body {
+    margin-top: 4%;
+    max-height: 625px;
+    border-radius: 20px;
+    background-color: #676767;
+    padding: 25px;
+}
+
+.page-wrapper
+{
+    border-radius: 20px 20px;
     background-color: #000;
+    max-height: 600px;
     color: #0f0;
     font-family: "Courier New", Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
+    overflow-y: scroll;
     animation: identifier 5s infinite;
 }
 @keyframes identifier {
@@ -23,24 +42,23 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 header, footer, nav, section, aside, div, p, h1, h2, h3, ul, li {
     padding: 10px;
     margin: 10px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: #0f0;
 }
 
 h1{
-    position:absolute;
-    top: 10px;
-    left: 0;
-    border: #0f0 solid 1px;
+}
+header
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2{
@@ -60,6 +78,7 @@ abbr {
     padding: 10px;
     margin: 10px;
 }
+
 p::before {
     content: "admin@PcZenGarden:~$ ";
     animation: curseur 3s infinite;
@@ -67,7 +86,7 @@ p::before {
 
 @keyframes curseur {
     0% {
-        opacity: 0;
+        opacity: 0.75;
     }
     25% {
         opacity: 0.5;
@@ -79,7 +98,7 @@ p::before {
         opacity: 0.5;
     }
     100% {
-        opacity: 0;
+        opacity: 0.75;
     }
 }
 
@@ -94,6 +113,17 @@ p::before {
 
 .sidebar {
     background-color: #111;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design-selection nav {
+    display: flex;
 }
 
 .sidebar a {
@@ -106,4 +136,14 @@ p::before {
 
 footer a {
     margin-right: 10px;
+}
+.logo {
+    position: absolute;
+    bottom: -5%;
+    left: 47%;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://img.icons8.com/?size=100&id=30840&format=png&color=000000");
+    background-size: cover;
+    text-indent: -9999px;
 }
