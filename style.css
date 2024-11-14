@@ -25,6 +25,10 @@ body {
     overflow-y: scroll;
     animation: identifier 5s infinite;
 }
+
+.page-wrapper.in-view {
+    opacity: 1;
+}
 @keyframes identifier {
     0% {
         background-color: #000;
@@ -36,6 +40,7 @@ body {
         background-color: #000;
     }
 }
+
 
 a {
     color: #0f0;
