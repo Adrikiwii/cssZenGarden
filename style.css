@@ -24,11 +24,12 @@ body {
     line-height: 1.5;
     overflow-y: scroll;
 }
-.page-wrapper p{
-    max-width: 700px;
+p{
+    max-width: 90%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(30, end) 1s 1 normal both;
+    animation: typing normal both;
+    animation-timeline: view();
 }
 
 @keyframes typing {
