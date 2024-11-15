@@ -23,21 +23,21 @@ body {
     font-size: 16px;
     line-height: 1.5;
     overflow-y: scroll;
-    animation: identifier 5s infinite;
+}
+.page-wrapper p{
+    max-width: 700px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end) 1s 1 normal both;
 }
 
-.page-wrapper.in-view {
-    opacity: 1;
-}
-@keyframes identifier {
-    0% {
-        background-color: #000;
+@keyframes typing {
+    from {
+        width: 0;
     }
-    50% {
-        background-color: rgb(1, 23, 1);
-    }
-    100% {
-        background-color: #000;
+    to {
+        width: 100%;
+        white-space: normal;
     }
 }
 
