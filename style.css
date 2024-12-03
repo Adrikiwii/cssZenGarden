@@ -133,7 +133,6 @@ footer {
 h1, h2, h3 {
     margin: 0;
 }
-
 a {
     color: #00796b;
     text-decoration: none;
@@ -197,8 +196,6 @@ a:hover {
     font-size: 125px;
     color:#e0f7fa;
     z-index: 3;
-    animation: ecriture;
-    animation-timeline: view();
 }
 .explanation p
 {
@@ -238,8 +235,6 @@ a:hover {
     position: absolute;
     font-size: 125px;
     color:#e0f7fa;
-    animation: ecriture;
-    animation-timeline: view();
 }
 
 .participation p
@@ -283,8 +278,6 @@ a:hover {
     color: #e0f7fa;
     left: 3%;
     bottom: 0;
-    animation: ecriture;
-    animation-timeline: view();
 }
 
 .benefits p
@@ -299,21 +292,6 @@ a:hover {
     z-index: 1;
 }
 
-.requirements
-{
-    opacity: 0;
-    animation: zoomIn 1s forwards;
-    animation-timeline: view();
-    background-color: rgb(255, 0, 255);
-}
-.requirements h3
-{
-    position: absolute;
-    font-size: 125px;
-    color:#00796b;
-    animation: ecriture;
-    animation-timeline: view();
-}
 
 .sidebar {
     position: fixed;
