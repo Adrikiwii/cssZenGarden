@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;
+    background-color: #016158;
     color: #004d40;
     overflow-x: hidden;
 }
@@ -49,26 +49,6 @@ section {
     animation-timeline: view();
 }
 
-@keyframes scroll {
-    75% {
-        scale: 1;
-    }
-    80% {
-        scale: 1.1;
-    }
-    85% {
-        scale: 0.8;
-    }
-    90% {
-        scale: 0.6;
-    }
-    95% {
-        scale: 0.4;
-    }
-    100% {
-        scale: 0;
-    }
-}
 .summary{
     padding: 2%;
     height: 50%;
@@ -166,7 +146,7 @@ a:hover {
     grid-column: 1/4;
     position: absolute;
     font-size: 5em;
-    color: #e0f7fa;;
+    color: #e0f7fa;
 }
 .explanation p
 {
@@ -331,11 +311,45 @@ footer {
     border-top: 5px solid #00796b;
 }
 footer a {
-    padding: 10px;
+    padding: 0.3%;
+    margin-left: 10px;
     font-size: 1em;
+    color: transparent;
 }
 footer a:first-child {
     padding-left: 0;
+    width: 1.5em;
+    background: url('https://img.icons8.com/?size=100&id=114118&format=png&color=FFFFFF');
+    background-size: cover;
+    background-position: center;
+}
+footer a:nth-child(2) {
+    padding-left: 0;
+    width: 1.7em;
+    background: url('https://img.icons8.com/?size=100&id=FF2cHnRyh3Q7&format=png&color=FFFFFF');
+    background-size: cover;
+    background-position: center;
+}
+footer a:nth-child(3) {
+    padding-left: 0;
+    width: 1.5em;
+    background: url('https://img.icons8.com/?size=100&id=4HfEF5HKe7ML&format=png&color=FFFFFF');
+    background-size: cover;
+    background-position: center;
+}
+footer a:nth-child(4) {
+    padding-left: 0;
+    width: 1.5em;
+    background: url('https://img.icons8.com/?size=100&id=1349&format=png&color=FFFFFF');
+    background-size: cover;
+    background-position: center;
+}
+footer a:nth-child(5) {
+    padding-left: 0;
+    width: 1.5em;
+    background: url('https://img.icons8.com/?size=100&id=12598&format=png&color=FFFFFF');
+    background-size: cover;
+    background-position: center;
 }
 
 .sidebar {
@@ -355,11 +369,31 @@ footer a:first-child {
     justify-content: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    
+}    
+
+
+/* Animations */
+
+@keyframes scroll {
+    75% {
+        scale: 1;
+    }
+    80% {
+        scale: 1.1;
+    }
+    85% {
+        scale: 0.8;
+    }
+    90% {
+        scale: 0.6;
+    }
+    95% {
+        scale: 0.4;
+    }
+    100% {
+        scale: 0;
+    }
 }
-
-
-
 
 @keyframes zoomIn {
     0% {
